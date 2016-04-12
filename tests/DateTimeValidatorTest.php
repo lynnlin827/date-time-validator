@@ -15,7 +15,7 @@ class DateTimeValidatorTest extends Orchestra\Testbench\TestCase
         Carbon::setTestNow(Carbon::createFromDate(2016, 02, 23));
         $validator = Validator::make(
             ['startAt' => '20160123'],
-            ['startAt' => 'during', 'endAt' => 'string']
+            ['startAt' => 'during']
         );
         $this->assertTrue($validator->passes());
     }
