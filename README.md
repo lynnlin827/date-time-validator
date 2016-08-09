@@ -22,7 +22,7 @@ Add the service provider into `config/app.php`.
 ```php
 'providers' => [
 	...
-	App\Providers\ValidatorServiceProvider::class,
+	DateTimeValidator\ValidatorServiceProvider::class,
 	...
 ]
 ```
